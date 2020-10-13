@@ -1,0 +1,26 @@
+﻿<Window x:Class="RegistroVentas.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RegistroVentas"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="450">
+    <StackPanel>
+		<Menu Height="18">
+			<MenuItem Header="_Registros">
+				<MenuItem x:Name="rArtículosMenuItem" Header="Registro de artículos" Click="rArtículosMenuItem_Click"/>
+				<MenuItem x:Name="rOrdenesMenuItem" Header="Registro de ordenes" Click="rOrdenesMenuItem_Click"/>
+			</MenuItem>
+
+			<MenuItem Header="_Consultas">
+				<!-- <MenuItem x:Name="cArtículosMenuItem" Header="Consulta de artículos" Click="cVentasMenuItem_Click"/>
+				<MenuItem x:Name="cArtículosMenuItem" Header="Consulta de ventas" Click="cVentasMenuItem_Click"/> -->
+			</MenuItem>
+
+			<MenuItem Header="Ayuda">
+				<Menu/>
+			</MenuItem>
+		</Menu>
+    </StackPanel>
+</Window>
